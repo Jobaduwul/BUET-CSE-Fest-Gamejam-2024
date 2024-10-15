@@ -2190,7 +2190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ced559669e3b7b43973bf75baab1b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 2.5
+  sprintSpeed: 6
+  sprintDuration: 3
+  sprintCooldown: 1
   leftLimit: -10
   rightLimit: 10
   topLimit: 1
@@ -2221,7 +2224,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &733738957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4494,6 +4497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  sprintSpeed: 5
+  sprintDuration: 3
+  sprintCooldown: 1
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -4524,7 +4530,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1690201471
 SpriteRenderer:
   m_ObjectHideFlags: 0
