@@ -6,35 +6,80 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange = 0.5f;
     public int damage = 10;
 
+    public Animator animator;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Attack();
+            AttackOne();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            AttackTwo();
+        }
+
+        if(CompareTag("MainHero"))
+        {
+            if(Input.GetKeyDown(KeyCode.F)) 
+            {
+                MainHeroAttack();
+            }
         }
     }
 
-    // Basic attack functionality
-    void Attack()
+
+    void AttackOne()
     {
+        animator.SetTrigger("AttackingOne");
+        animator.SetTrigger("EvilWizardAttacking");
         Debug.Log("Attack performed");
 
-        // Detect all colliders in the attack range
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);         // Detect all colliders in the attack range
 
-        // Loop through the colliders and check if they have the "Enemy" tag
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
             {
                 Debug.Log("Hit enemy: " + enemy.name);
-
-                // Call a damage function on the enemy (assuming the enemy has a TakeDamage() method)
-                // Example:
-                // enemy.GetComponent<Enemy>().TakeDamage(damage);
             }
         }
     }
+
+    void AttackTwo()
+    {
+        animator.SetTrigger("AttackingTwo");
+        animator.SetTrigger("EvilWizardAttacking");
+        Debug.Log("Attack performed");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);         // Detect all colliders in the attack range
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                Debug.Log("Hit enemy: " + enemy.name);
+            }
+        }
+    }
+
+    void MainHeroAttack()
+    {
+        animator.SetTrigger("AttackingThree");
+        Debug.Log("Attack performed");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);         // Detect all colliders in the attack range
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                Debug.Log("Hit enemy: " + enemy.name);
+            }
+        }
+    }
+
 
     // To visualize the attack range in the Scene view (optional)
     private void OnDrawGizmosSelected()

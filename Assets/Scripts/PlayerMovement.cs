@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
 
+    public Animator animator;
+
     private bool isFacingRight = true;
     private bool isDashing = false;
     private float dashTimer = 0f;
@@ -28,9 +30,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Get movement input (x and y for horizontal and vertical directions)
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        float speed = movement.sqrMagnitude;
+        animator.SetFloat("Speed", speed);
 
         // Check for dash input (Shift key)
         bool dashInput = Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);

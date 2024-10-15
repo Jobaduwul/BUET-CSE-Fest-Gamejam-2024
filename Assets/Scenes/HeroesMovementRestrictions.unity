@@ -308,6 +308,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 155610029}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -1326,6 +1330,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 335654416}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -1843,6 +1851,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 367582408}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -2268,6 +2280,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 476394460}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -2676,7 +2692,7 @@ Transform:
   m_GameObject: {fileID: 546093557}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4, y: -1, z: 0}
+  m_LocalPosition: {x: -2.08, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2695,6 +2711,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 546093562}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -2789,9 +2809,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4aead72bc5061a43a8b8373612e5295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 546093560}
   attackRange: 0.5
   damage: 10
+  animator: {fileID: 546093562}
 --- !u!1 &555397951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3246,6 +3267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 834772343}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -3338,7 +3363,7 @@ Transform:
   m_GameObject: {fileID: 834772338}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -1, z: 0}
+  m_LocalPosition: {x: -0.01, y: -1, z: 0}
   m_LocalScale: {x: 0.56, y: 0.56, z: 0.56}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3434,9 +3459,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4aead72bc5061a43a8b8373612e5295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 834772342}
   attackRange: 0.5
   damage: 10
+  animator: {fileID: 834772343}
 --- !u!1 &842729952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,6 +3602,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 866803359}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -4698,6 +4728,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 1306416551}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -6065,6 +6099,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 1843679304}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -6157,7 +6195,7 @@ Transform:
   m_GameObject: {fileID: 1843679298}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49, y: -1, z: 0}
+  m_LocalPosition: {x: -0.646, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6253,9 +6291,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4aead72bc5061a43a8b8373612e5295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 1843679303}
   attackRange: 0.5
   damage: 10
+  animator: {fileID: 1843679304}
 --- !u!1 &1844830878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6778,7 +6817,7 @@ GameObject:
   - component: {fileID: 2087396515}
   m_Layer: 0
   m_Name: Fantasy Warrior
-  m_TagString: Untagged
+  m_TagString: MainHero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6796,6 +6835,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 2087396513}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -6888,7 +6931,7 @@ Transform:
   m_GameObject: {fileID: 2087396507}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91, y: -1, z: 0}
+  m_LocalPosition: {x: -1.285, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6984,9 +7027,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4aead72bc5061a43a8b8373612e5295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 2087396512}
   attackRange: 0.5
   damage: 10
+  animator: {fileID: 2087396513}
 --- !u!1 &2096814572
 GameObject:
   m_ObjectHideFlags: 0
@@ -7107,6 +7151,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 2123918898}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
@@ -7199,7 +7247,7 @@ Transform:
   m_GameObject: {fileID: 2123918893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: -1, z: 0}
+  m_LocalPosition: {x: 0.602, y: -1, z: 0}
   m_LocalScale: {x: 1.02, y: 1.02, z: 1.02}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7295,9 +7343,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4aead72bc5061a43a8b8373612e5295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 2123918897}
   attackRange: 0.5
   damage: 10
+  animator: {fileID: 2123918898}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
