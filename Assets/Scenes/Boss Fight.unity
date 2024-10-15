@@ -2080,7 +2080,7 @@ GameObject:
   - component: {fileID: 733738951}
   m_Layer: 0
   m_Name: Fantasy Warrior
-  m_TagString: Untagged
+  m_TagString: MainHero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2112,6 +2112,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1590933327}
   attackRange: 0.5
   damage: 10
+  animator: {fileID: 733738954}
 --- !u!61 &733738953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2191,9 +2192,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
-  sprintSpeed: 6
-  sprintDuration: 3
-  sprintCooldown: 1
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 733738954}
   leftLimit: -10
   rightLimit: 10
   topLimit: 1
@@ -4497,9 +4499,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  sprintSpeed: 5
-  sprintDuration: 3
-  sprintCooldown: 1
+  dashSpeed: 8
+  dashDuration: 0.2
+  dashCooldown: 1
+  animator: {fileID: 0}
   leftLimit: -12
   rightLimit: 12
   topLimit: 0
