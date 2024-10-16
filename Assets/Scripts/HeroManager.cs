@@ -37,6 +37,13 @@ public class HeroManager : MonoBehaviour
     // Select and instantiate a hero at the beginning of a level
     public void SelectHero(int heroIndex)
     {
+        // If there's already a selected hero instance in the scene, destroy it
+        if (selectedHero != null && selectedHero.heroInstance != null)
+        {
+            Destroy(selectedHero.heroInstance); // Destroy the old hero's instance
+            selectedHero.heroInstance = null;   // Reset the reference to null
+        }
+
         selectedHero = heroes[heroIndex];
 
         if (selectedHero.isDead)
@@ -55,12 +62,13 @@ public class HeroManager : MonoBehaviour
             CameraFollow cameraFollow = Camera.main.GetComponent<CameraFollow>();
             if (cameraFollow != null)
             {
-                cameraFollow.player = selectedHero.heroInstance.transform; // Assign the player's transform
+                cameraFollow.player = selectedHero.heroInstance.transform; // Assign the player's transform to follow the new hero
             }
         }
 
         Debug.Log("Selected hero: " + selectedHero.heroName);
     }
+
 
     // Get the selected hero's abilities (including inherited ones)
     public List<string> GetSelectedHeroAbilities()

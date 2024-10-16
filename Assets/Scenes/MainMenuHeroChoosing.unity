@@ -1417,6 +1417,13 @@ MonoBehaviour:
     - Lightning
     isDead: 0
     heroInstance: {fileID: 0}
+  selectedHero:
+    heroName: 
+    heroPrefab: {fileID: 0}
+    lives: 3
+    abilities: []
+    isDead: 0
+    heroInstance: {fileID: 0}
 --- !u!1 &724177627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,9 +3285,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1272711118}
+      - m_Target: {fileID: 1272711119}
         m_TargetAssemblyTypeName: LevelSelectionController, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: ResetProgress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

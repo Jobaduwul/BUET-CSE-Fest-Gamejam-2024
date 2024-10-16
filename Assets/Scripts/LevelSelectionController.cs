@@ -17,7 +17,8 @@ public class LevelSelectionController : MonoBehaviour
 
     void LoadLevelProgress()
     {
-        bool isPrologueCompleted = PlayerPrefs.GetInt("PrologueCompleted", 0) == 1;
+        bool isPrologueCompleted = true;
+        //bool isPrologueCompleted = PlayerPrefs.GetInt("PrologueCompleted", 0) == 1;
         int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 0);
 
         prologueButton.interactable = true;

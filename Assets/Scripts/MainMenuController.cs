@@ -40,6 +40,22 @@ public class MainMenuController : MonoBehaviour
         heroSelectionPanel.SetActive(false);
     }
 
+    public void LoadMainMenu()
+    {
+        // Check if there is an instantiated hero and destroy it if it exists
+        if (HeroManager.instance != null && HeroManager.instance.selectedHero != null
+            && HeroManager.instance.selectedHero.heroInstance != null)
+        {
+            Destroy(HeroManager.instance.selectedHero.heroInstance);
+            HeroManager.instance.selectedHero.heroInstance = null; // Ensure reference is cleared
+        }
+
+        // Load the Main Menu scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenuHeroChoosing");
+    }
+
+
+
     public void ExitGame()
     {
         Application.Quit();
