@@ -64,11 +64,6 @@ public class LevelSelectionController : MonoBehaviour
         LoadLevelProgress();
     }
 
-    public void LoadLevel(int levelIndex)
-    {
-        SceneManager.LoadScene("Level" + levelIndex);
-    }
-
     public void LoadFinalBossLevel()
     {
         SceneManager.LoadScene("FinalBossScene");
@@ -77,6 +72,8 @@ public class LevelSelectionController : MonoBehaviour
     public void ResetProgress()
     {
         PlayerPrefs.DeleteAll();
+        HeroManager.instance.ResetHeroes(); // Reset all hero states
         LoadLevelProgress();
     }
+
 }

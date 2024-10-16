@@ -1,59 +1,80 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PlayerAbility : MonoBehaviour
 {
-    private string currentAbility = "Fire"; // Default ability
+    private List<string> currentAbilities = new List<string>(); // Stores active abilities
+    private string activeAbility; // Active ability the player is using
+
+    void Start()
+    {
+        // Get the selected hero's abilities from the HeroManager
+        currentAbilities = HeroManager.instance.GetSelectedHeroAbilities();
+
+        // Set the first ability as the default
+        if (currentAbilities.Count > 0)
+        {
+            activeAbility = currentAbilities[0];
+        }
+    }
 
     void Update()
     {
-        // Use special ability
+        // Use the active ability
         if (Input.GetKeyDown(KeyCode.P))
         {
             UseAbility();
         }
 
-        // Switch abilities using number keys
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        // Switch abilities (only if multiple abilities are available)
+        if (currentAbilities.Count > 1)
         {
-            SwitchAbility("Fire");
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SwitchAbility("Ice");
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            SwitchAbility("Thunder");
+            if (Input.GetKeyDown(KeyCode.Alpha1) && currentAbilities.Contains("Fire"))
+            {
+                SwitchAbility("Fire");
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2) && currentAbilities.Contains("Ice"))
+            {
+                SwitchAbility("Ice");
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3) && currentAbilities.Contains("Thunder"))
+            {
+                SwitchAbility("Thunder");
+            }
         }
     }
 
-    // Use the currently selected ability
     void UseAbility()
     {
-        Debug.Log("Using special ability: " + currentAbility);
+        Debug.Log("Using special ability: " + activeAbility);
 
-        // You can add more logic based on the current ability
-        switch (currentAbility)
+        // Add logic for each ability
+        switch (activeAbility)
         {
             case "Fire":
-                // Implement Fire ability logic
                 Debug.Log("Fire ability used!");
                 break;
             case "Ice":
-                // Implement Ice ability logic
                 Debug.Log("Ice ability used!");
                 break;
             case "Thunder":
-                // Implement Thunder ability logic
                 Debug.Log("Thunder ability used!");
                 break;
         }
     }
 
-    // Switch abilities based on input
     void SwitchAbility(string ability)
     {
-        currentAbility = ability;
-        Debug.Log("Switched to ability: " + currentAbility);
+        activeAbility = ability;
+        Debug.Log("Switched to ability: " + activeAbility);
     }
+
+    /*
+    // Inherit abilities from dead hero (testing purpose)
+    public void InheritHeroAbilities(int deadHeroIndex)
+    {
+        HeroManager.instance.InheritAbilities(deadHeroIndex);
+        currentAbilities = HeroManager.instance.GetSelectedHeroAbilities();
+    }
+    */
 }

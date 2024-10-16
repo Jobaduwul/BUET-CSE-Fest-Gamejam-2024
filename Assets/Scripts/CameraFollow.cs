@@ -12,15 +12,35 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
         originalYPosition = transform.position.y;
+
+        // Initialize the player reference at the start
+        UpdatePlayerReference();
     }
 
     void LateUpdate()
     {
-        Vector3 playerPosition = player.position;
-
-        if (playerPosition.x > leftLimit && playerPosition.x < rightLimit)
+        if (player != null) // Check if the player is assigned
         {
-            transform.position = new Vector3(playerPosition.x + horizontalOffset, originalYPosition, transform.position.z);
+            Vector3 playerPosition = player.position;
+
+            if (playerPosition.x > leftLimit && playerPosition.x < rightLimit)
+            {
+                transform.position = new Vector3(playerPosition.x + horizontalOffset, originalYPosition, transform.position.z);
+            }
+        }
+        else
+        {
+            UpdatePlayerReference(); // Try to update player reference if it's null
+        }
+    }
+
+    // Method to update the player reference
+    private void UpdatePlayerReference()
+    {
+        if (HeroManager.instance != null && HeroManager.instance.selectedHero != null)
+        {
+            player = HeroManager.instance.selectedHero.heroInstance?.transform; // Use the null-conditional operator
         }
     }
 }
+
