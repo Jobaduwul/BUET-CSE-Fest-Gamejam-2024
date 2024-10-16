@@ -15,19 +15,22 @@ public class PlayerAttack : MonoBehaviour
         {
             animator.SetTrigger("AttackingOne");
             animator.SetTrigger("EvilWizardAttacking");
+            animator.SetFloat("Speed", 0.0f);
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             animator.SetTrigger("AttackingTwo");
             animator.SetTrigger("EvilWizardAttacking");
+            animator.SetFloat("Speed", 0.0f);
         }
 
-        if(CompareTag("MainHero"))
+        if (CompareTag("MainHero"))
         {
             if(Input.GetKeyDown(KeyCode.F)) 
             {
                 animator.SetTrigger("AttackingThree");
+                animator.SetFloat("Speed", 0.0f);
             }
         }
     }

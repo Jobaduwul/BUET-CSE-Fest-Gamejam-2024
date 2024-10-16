@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isFacingRight = true;
     private bool isDashing = false;
+    private bool canMove = true;        // Controls whether the player can move
     private float dashTimer = 0f;
     private float cooldownTimer = 0f;
 
@@ -30,63 +31,75 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        float speed = movement.sqrMagnitude;
-        animator.SetFloat("Speed", speed);
-
-        // Check for dash input (Shift key)
-        bool dashInput = Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);
-
-        if (dashInput && cooldownTimer <= 0f && !isDashing)
+        // Only allow movement input if the player can move
+        if (canMove)
         {
-            // Start the dash
-            isDashing = true;
-            dashTimer = dashDuration;
-            cooldownTimer = dashCooldown;
-        }
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
 
-        if (isDashing)
-        {
-            dashTimer -= Time.deltaTime;
+            float speed = movement.sqrMagnitude;
+            animator.SetFloat("Speed", speed);
 
-            // Stop the dash when the duration is over
-            if (dashTimer <= 0f)
+            // Check for dash input (Shift key)
+            bool dashInput = Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);
+
+            if (dashInput && cooldownTimer <= 0f && !isDashing)
             {
-                isDashing = false;
+                // Start the dash
+                isDashing = true;
+                dashTimer = dashDuration;
+                cooldownTimer = dashCooldown;
             }
-        }
 
-        // Handle cooldown timer
-        if (!isDashing && cooldownTimer > 0f)
-        {
-            cooldownTimer -= Time.deltaTime;
-        }
+            if (isDashing)
+            {
+                dashTimer -= Time.deltaTime;
 
-        // Flip the player when moving left or right
-        if (movement.x > 0 && !isFacingRight)
-        {
-            Flip();
-        }
-        else if (movement.x < 0 && isFacingRight)
-        {
-            Flip();
+                // Stop the dash when the duration is over
+                if (dashTimer <= 0f)
+                {
+                    isDashing = false;
+                }
+            }
+
+            // Handle cooldown timer
+            if (!isDashing && cooldownTimer > 0f)
+            {
+                cooldownTimer -= Time.deltaTime;
+            }
+
+            // Flip the player when moving left or right
+            if (movement.x > 0 && !isFacingRight)
+            {
+                Flip();
+            }
+            else if (movement.x < 0 && isFacingRight)
+            {
+                Flip();
+            }
         }
     }
 
     void FixedUpdate()
     {
-        // Adjust speed: If dashing, apply the dash speed; otherwise, use normal move speed
-        float currentSpeed = isDashing ? dashSpeed : moveSpeed;
+        if (canMove)
+        {
+            // Adjust speed: If dashing, apply the dash speed; otherwise, use normal move speed
+            float currentSpeed = isDashing ? dashSpeed : moveSpeed;
 
-        Vector2 targetPosition = rb.position + movement * currentSpeed * Time.fixedDeltaTime;
+            Vector2 targetPosition = rb.position + movement * currentSpeed * Time.fixedDeltaTime;
 
-        // Clamp the player's position within the boundaries
-        targetPosition.x = Mathf.Clamp(targetPosition.x, leftLimit, rightLimit);
-        targetPosition.y = Mathf.Clamp(targetPosition.y, bottomLimit, topLimit);
+            // Clamp the player's position within the boundaries
+            targetPosition.x = Mathf.Clamp(targetPosition.x, leftLimit, rightLimit);
+            targetPosition.y = Mathf.Clamp(targetPosition.y, bottomLimit, topLimit);
 
-        rb.MovePosition(targetPosition);
+            rb.MovePosition(targetPosition);
+        }
+        else
+        {
+            // Stop any residual velocity when movement is disabled
+            rb.velocity = Vector2.zero;
+        }
     }
 
     void Flip()
@@ -95,5 +108,20 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+
+    public void StopMovement()
+    {
+        canMove = false;
+
+        movement = Vector2.zero;
+        rb.velocity = Vector2.zero;
+    }
+
+
+    public void AllowMovement()
+    {
+        canMove = true;
     }
 }
