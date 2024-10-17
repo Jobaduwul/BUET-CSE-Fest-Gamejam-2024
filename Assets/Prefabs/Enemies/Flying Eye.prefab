@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 6800193128545009012}
   - component: {fileID: 6176690761017753053}
   - component: {fileID: 3351510063990992284}
-  - component: {fileID: 8963833520897617372}
   - component: {fileID: 9172036385316222087}
   - component: {fileID: 7382807194664773784}
   - component: {fileID: 3365498165236879228}
   - component: {fileID: 9073309959464415227}
   - component: {fileID: 1378026088802716952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flying Eye
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -86,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 453625732, guid: 638b3294f9b4ff147bd2c1f2f576c624, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -107,7 +106,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -121,28 +120,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!114 &8963833520897617372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020528292898422297}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ced559669e3b7b43973bf75baab1b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  dashSpeed: 8
-  dashDuration: 0.2
-  dashCooldown: 1
-  animator: {fileID: 9172036385316222087}
-  leftLimit: -12
-  rightLimit: 12
-  topLimit: 0
-  bottomLimit: -2.5
+  m_Constraints: 4
 --- !u!95 &9172036385316222087
 Animator:
   serializedVersion: 5
@@ -221,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ae96cafa5a1234794ffc1b5293c15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 10
 --- !u!114 &9073309959464415227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +207,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020528292898422297}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
   m_Name: 
@@ -255,10 +233,10 @@ MonoBehaviour:
   - {fileID: 748640271634510802}
   attackRange: 0.22
   proximityRange: {fileID: 2352509483934365607}
-  damage: 40
+  damage: 20
   isFlipped: 0
-  speed: 2.5
-  pointDifference: 2.3
+  speed: 2
+  pointDifference: 0
 --- !u!1 &1090828705183370407
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 748640271634510802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5674045077168288142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2352509483934365607}
   - component: {fileID: 1882049935472162329}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProximityRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +394,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1649971, y: 0.0034579933}
+  m_Offset: {x: 0.007302612, y: 0.009542912}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -427,5 +405,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6700058, y: 0.19996494}
+  m_Size: {x: 1.0523281, y: 0.26689875}
   m_EdgeRadius: 0

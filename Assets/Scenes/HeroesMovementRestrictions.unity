@@ -199,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 55253980}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 85999543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112158011}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -923,7 +923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303051705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,7 +1469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &367582407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1660,7 +1660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 370317578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 382612049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2016,7 +2016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476959489}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2209,9 +2209,9 @@ GameObject:
   - component: {fileID: 546093565}
   - component: {fileID: 546093564}
   - component: {fileID: 546093566}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Martial Hero 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2283,7 +2283,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1344304576, guid: 7f1cd4b18f114ab4aa265d4c5e6e3957, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2496,7 +2496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 592154094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2693,7 +2693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 675182525}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2724,7 +2724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 683984958}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2800,7 +2800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 786187608}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3007,13 +3007,13 @@ GameObject:
   - component: {fileID: 834772346}
   - component: {fileID: 834772345}
   - component: {fileID: 834772347}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wizard
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &834772339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3423,7 +3423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 893816915}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3622,7 +3622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 965667935}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3653,7 +3653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966139627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3852,7 +3852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1077009059}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4135,7 +4135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1156114546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4250,7 +4250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1166573301}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4281,7 +4281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1170403696}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4648,7 +4648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1413630183}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5099,7 +5099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566647288}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5486,7 +5486,7 @@ MonoBehaviour:
   - {fileID: 7699558440298835760, guid: ffde58a41fffe764f8e81cdc34017147, type: 3}
   - {fileID: 788328729902786787, guid: 6ac00defb9946f84e9e37103329a0ef3, type: 3}
   - {fileID: 3307803762283612004, guid: f78a778adc109724cb9ecbef207aa55b, type: 3}
-  spawnInterval: 1.25
+  spawnInterval: 1.2
   spawnOffset: 5.5
 --- !u!1 &1765431674
 GameObject:
@@ -5781,7 +5781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1839376794}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5812,7 +5812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1842705856}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5851,13 +5851,13 @@ GameObject:
   - component: {fileID: 1843679307}
   - component: {fileID: 1843679306}
   - component: {fileID: 1843679308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Evil Wizard
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1843679300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6263,7 +6263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851309499}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6546,7 +6546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2009583314}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6661,7 +6661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2086692279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6700,13 +6700,13 @@ GameObject:
   - component: {fileID: 2087396516}
   - component: {fileID: 2087396515}
   - component: {fileID: 2087396517}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fantasy Warrior
-  m_TagString: MainHero
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2087396509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7044,13 +7044,13 @@ GameObject:
   - component: {fileID: 2123918901}
   - component: {fileID: 2123918900}
   - component: {fileID: 2123918902}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Medieval Warrior 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2123918894
 MonoBehaviour:
   m_ObjectHideFlags: 0

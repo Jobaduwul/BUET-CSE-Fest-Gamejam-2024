@@ -32,7 +32,7 @@ public class SortingOrderManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("PlayerFootPoint or BossFootPoint is not assigned!");
+            //Debug.LogWarning("PlayerFootPoint or BossFootPoint is not assigned!");
         }
     }
 }

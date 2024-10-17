@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 215791283793192863}
   - component: {fileID: 2446918028334106149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProximityRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.26986048, y: -0.008381367}
+  m_Offset: {x: 0.012892038, y: -0.008381367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -75,7 +75,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7850171, y: 0.3318894}
+  m_Size: {x: 1.298954, y: 0.3318894}
   m_EdgeRadius: 0
 --- !u!1 &4521154862343813965
 GameObject:
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4653663190245592432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3969585431091831515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,13 +181,12 @@ GameObject:
   - component: {fileID: 5050603169975432881}
   - component: {fileID: 6892239550022350193}
   - component: {fileID: 6437887785945460785}
-  - component: {fileID: 1686744018023328350}
   - component: {fileID: 269212652562648133}
   - component: {fileID: 9085933252064507105}
   - component: {fileID: 8914539462113811702}
   - component: {fileID: 939803973820197118}
   - component: {fileID: 2158343049096667185}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goblin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -256,7 +255,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 777737411, guid: 503101f07786a6341be0185a68f400f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -277,7 +276,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -291,28 +290,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!114 &1686744018023328350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7699558440298835760}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ced559669e3b7b43973bf75baab1b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  dashSpeed: 8
-  dashDuration: 0.2
-  dashCooldown: 1
-  animator: {fileID: 269212652562648133}
-  leftLimit: -12
-  rightLimit: 12
-  topLimit: 0
-  bottomLimit: -2.5
+  m_Constraints: 4
 --- !u!95 &269212652562648133
 Animator:
   serializedVersion: 5
@@ -391,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ae96cafa5a1234794ffc1b5293c15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 10
 --- !u!114 &939803973820197118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +377,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7699558440298835760}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
   m_Name: 
@@ -425,7 +403,7 @@ MonoBehaviour:
   - {fileID: 4653663190245592432}
   attackRange: 0.25
   proximityRange: {fileID: 215791283793192863}
-  damage: 40
+  damage: 30
   isFlipped: 0
-  speed: 2.5
-  pointDifference: 2.3
+  speed: 2
+  pointDifference: 0

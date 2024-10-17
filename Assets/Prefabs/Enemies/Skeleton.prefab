@@ -42,13 +42,12 @@ GameObject:
   - component: {fileID: 7895230473777041018}
   - component: {fileID: 1245548738287370256}
   - component: {fileID: 1588463824160581067}
-  - component: {fileID: 4659364992630908227}
   - component: {fileID: 881322421432984163}
   - component: {fileID: 3289125493979690815}
   - component: {fileID: -3001160951540720325}
   - component: {fileID: 3638016613978374349}
   - component: {fileID: 6142040478157163529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -117,7 +116,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -620025899, guid: dd6efe7bb4186e8479e537faebd3060b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -138,7 +137,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -152,28 +151,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!114 &4659364992630908227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3307803762283612004}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ced559669e3b7b43973bf75baab1b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  dashSpeed: 8
-  dashDuration: 0.2
-  dashCooldown: 1
-  animator: {fileID: 881322421432984163}
-  leftLimit: -12
-  rightLimit: 12
-  topLimit: 0
-  bottomLimit: -2.5
+  m_Constraints: 4
 --- !u!95 &881322421432984163
 Animator:
   serializedVersion: 5
@@ -252,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ae96cafa5a1234794ffc1b5293c15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 10
 --- !u!114 &3638016613978374349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,10 +250,10 @@ MonoBehaviour:
   - {fileID: 8103651779094159451}
   attackRange: 0.25
   proximityRange: {fileID: 2284634046817143615}
-  damage: 40
+  damage: 30
   isFlipped: 0
-  speed: 2.5
-  pointDifference: 2.3
+  speed: 2
+  pointDifference: 0
 --- !u!114 &6142040478157163529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3307803762283612004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
   m_Name: 
@@ -300,7 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2284634046817143615}
   - component: {fileID: 3706267436198440827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProximityRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +332,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.26986048, y: -0.008381367}
+  m_Offset: {x: 0.015873104, y: -0.008381367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -365,7 +343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7850171, y: 0.3318894}
+  m_Size: {x: 1.2929919, y: 0.3318894}
   m_EdgeRadius: 0
 --- !u!1 &7257698382241176141
 GameObject:
@@ -376,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8103651779094159451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5241648219105961267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

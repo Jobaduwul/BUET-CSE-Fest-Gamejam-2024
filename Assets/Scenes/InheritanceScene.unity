@@ -1627,13 +1627,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1152625903541289625, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152625903541289625, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.7799997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.7799997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.7799997
+      objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.020251304
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9222952
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1641,7 +1661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.64278764
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1653,7 +1673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.76604444
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1665,12 +1685,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4870133993824852655, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5759032946735162072, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
       propertyPath: m_Name
       value: Fantasy Warrior
       objectReference: {fileID: 0}
+    - target: {fileID: 6355104893281127046, guid: 6926c0d47cd498c4dba9182721ffce02, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -719791251, guid: 15105d566549cf64c895287ca9ce990e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

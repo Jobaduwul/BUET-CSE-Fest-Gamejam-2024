@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
+using static HeroManager;
 
 public class Boss : MonoBehaviour
 {
@@ -25,7 +26,17 @@ public class Boss : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
+
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Player object not found! Make sure the player has the 'Player' tag.");
+        }
     }
 
     private void Update()
@@ -82,7 +93,6 @@ public class Boss : MonoBehaviour
             {
                 Debug.Log("Hero nearby: " + hero.name);
                 TriggerAttackAnimation();
-                continue;
             }
         }
     }

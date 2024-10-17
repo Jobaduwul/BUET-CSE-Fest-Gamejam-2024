@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 8646757120670467316}
   - component: {fileID: 7168907559004045261}
   - component: {fileID: 5647845429139374946}
-  - component: {fileID: 956995461067311679}
   - component: {fileID: 7771480189753259908}
   - component: {fileID: 810035951751722434}
   - component: {fileID: -1768719483264692435}
   - component: {fileID: 297183268396626862}
   - component: {fileID: 3614375309303601871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mushroom
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -86,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -229597813, guid: f4a8e36c3ddfe3543a7210f071ad9601, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -107,7 +106,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -121,28 +120,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!114 &956995461067311679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788328729902786787}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ced559669e3b7b43973bf75baab1b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  dashSpeed: 8
-  dashDuration: 0.2
-  dashCooldown: 1
-  animator: {fileID: 7771480189753259908}
-  leftLimit: -12
-  rightLimit: 12
-  topLimit: 0
-  bottomLimit: -2.5
+  m_Constraints: 4
 --- !u!95 &7771480189753259908
 Animator:
   serializedVersion: 5
@@ -221,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ae96cafa5a1234794ffc1b5293c15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 10
 --- !u!114 &297183268396626862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,10 +219,10 @@ MonoBehaviour:
   - {fileID: 759638101917342821}
   attackRange: 0.25
   proximityRange: {fileID: 1786434034680848371}
-  damage: 40
+  damage: 20
   isFlipped: 0
-  speed: 2.5
-  pointDifference: 2.3
+  speed: 2
+  pointDifference: 0
 --- !u!114 &3614375309303601871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +230,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788328729902786787}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
   m_Name: 
@@ -299,7 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7358111823036229439}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 759638101917342821}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1786434034680848371}
   - component: {fileID: 2766938686763326108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProximityRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +394,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.26986048, y: -0.008381367}
+  m_Offset: {x: 0.01676768, y: -0.008381367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -427,5 +405,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7850171, y: 0.3318894}
+  m_Size: {x: 1.2912027, y: 0.3318894}
   m_EdgeRadius: 0

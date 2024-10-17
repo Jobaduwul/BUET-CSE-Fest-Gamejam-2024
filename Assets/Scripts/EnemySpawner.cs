@@ -38,15 +38,5 @@ public class EnemySpawner : MonoBehaviour
 
         // Instantiate the selected enemy at the random position
         GameObject spawnedEnemy = Instantiate(selectedEnemy, spawnPosition, Quaternion.identity);
-
-        // If the enemy spawns on the right side (x > camera position), flip its sprite
-        if (xPosition > cameraPosition.x)
-        {
-            SpriteRenderer spriteRenderer = spawnedEnemy.GetComponent<SpriteRenderer>();
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.flipX = true;
-            }
-        }
     }
 }
