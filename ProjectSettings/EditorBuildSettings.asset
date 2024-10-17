@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuHeroChoosing.unity
     guid: f081294c1ca2d4f4bac5c55eb8004356
+  - enabled: 1
+    path: Assets/Scenes/PrologueScene.unity
+    guid: 2d08c85735325af40a6d0b8ee24a69af
   m_configObjects: {}

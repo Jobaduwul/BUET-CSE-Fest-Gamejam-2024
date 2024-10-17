@@ -17,8 +17,8 @@ public class LevelSelectionController : MonoBehaviour
 
     void LoadLevelProgress()
     {
-        bool isPrologueCompleted = true;
-        //bool isPrologueCompleted = PlayerPrefs.GetInt("PrologueCompleted", 0) == 1;
+        //bool isPrologueCompleted = true;
+        bool isPrologueCompleted = PlayerPrefs.GetInt("PrologueCompleted", 0) == 1;
         int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 0);
 
         prologueButton.interactable = true;
@@ -63,6 +63,7 @@ public class LevelSelectionController : MonoBehaviour
         PlayerPrefs.SetInt("PrologueCompleted", 1);
         PlayerPrefs.SetInt("UnlockedLevels", 0);
         LoadLevelProgress();
+        SceneManager.LoadScene("inheritanceScene");
     }
 
     public void LoadFinalBossLevel()
