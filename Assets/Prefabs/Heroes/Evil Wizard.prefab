@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 6362766477523632921}
   m_Layer: 0
   m_Name: Evil Wizard
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6977107341841689882}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -252,7 +252,7 @@ MonoBehaviour:
   attackPoints:
   - {fileID: 5897112642662356508}
   - {fileID: 4705294915959669960}
-  attackRange: 0.17
+  attackRange: 0.5
   damage: 10
   animator: {fileID: 1198221915650688122}
 --- !u!114 &6362766477523632921

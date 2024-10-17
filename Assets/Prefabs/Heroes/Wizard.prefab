@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 7003087363446485953}
   m_Layer: 0
   m_Name: Wizard
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,7 +294,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7967498514164479411}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -349,7 +349,7 @@ MonoBehaviour:
   - {fileID: 5599226700388867574}
   - {fileID: 4043803826998685951}
   - {fileID: 8145109879249563729}
-  attackRange: 0.18
+  attackRange: 0.5
   damage: 10
   animator: {fileID: 7382546313628632770}
 --- !u!114 &7003087363446485953

@@ -63,17 +63,24 @@ public class PlayerAttack : MonoBehaviour
     {
         Debug.Log("Attack performed at " + attackPoint.name);
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);         // Detect all colliders in the attack range
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange); // Detect all colliders in the attack range
 
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
             {
                 Debug.Log("Hit enemy: " + enemy.name);
+                // Deal damage to the enemy
+                EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.TakeDamage(damage); // Pass the damage value to the enemy
+                }
             }
         }
     }
-    
+
+
 
 
     // To visualize the attack range in the Scene view (optional)

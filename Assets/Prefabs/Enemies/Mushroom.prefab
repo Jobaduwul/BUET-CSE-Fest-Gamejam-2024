@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 956995461067311679}
   - component: {fileID: 7771480189753259908}
   - component: {fileID: 810035951751722434}
+  - component: {fileID: -1768719483264692435}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Enemy
@@ -114,7 +115,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &956995461067311679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +165,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788328729902786787}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -202,3 +203,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23, y: 0.37}
   m_EdgeRadius: 0
+--- !u!114 &-1768719483264692435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788328729902786787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ae96cafa5a1234794ffc1b5293c15a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10

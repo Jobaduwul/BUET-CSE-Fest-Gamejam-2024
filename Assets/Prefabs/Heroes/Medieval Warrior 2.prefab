@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 3260154181681018807}
   m_Layer: 0
   m_Name: Medieval Warrior 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,7 +201,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2668369813416765529}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -256,7 +256,7 @@ MonoBehaviour:
   - {fileID: 8767916187470195744}
   - {fileID: 7817882154142575654}
   - {fileID: 2759952635536876351}
-  attackRange: 0.24
+  attackRange: 0.5
   damage: 10
   animator: {fileID: 3333649789765459830}
 --- !u!114 &3260154181681018807

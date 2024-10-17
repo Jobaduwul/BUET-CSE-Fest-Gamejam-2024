@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 3865246615608676252}
   m_Layer: 0
   m_Name: Martial Hero 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7192664294745153679}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -318,7 +318,7 @@ MonoBehaviour:
   - {fileID: 8679202151901250413}
   - {fileID: 3149584933449123583}
   - {fileID: 8918643759140625671}
-  attackRange: 0.2
+  attackRange: 0.5
   damage: 10
   animator: {fileID: 7185845707690465022}
 --- !u!114 &3865246615608676252
