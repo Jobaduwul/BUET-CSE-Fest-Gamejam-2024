@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
 
     private float originalYPosition;
 
-    void Awake()
+    void Start()
     {
         originalYPosition = transform.position.y;
 
