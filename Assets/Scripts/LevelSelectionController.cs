@@ -63,7 +63,7 @@ public class LevelSelectionController : MonoBehaviour
         PlayerPrefs.SetInt("PrologueCompleted", 1);
         PlayerPrefs.SetInt("UnlockedLevels", 0);
         LoadLevelProgress();
-        SceneManager.LoadScene("inheritanceScene");
+        SceneManager.LoadScene("InheritanceScene");
     }
 
     public void LoadFinalBossLevel()

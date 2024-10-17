@@ -1594,28 +1594,24 @@ MonoBehaviour:
     lives: 3
     abilities:
     - Fire
-    isDead: 0
     heroInstance: {fileID: 0}
   - heroName: HeroB
     heroPrefab: {fileID: 7192664294745153679, guid: 39424f874ea4ca445a5390aac4676123, type: 3}
     lives: 3
     abilities:
     - Ice
-    isDead: 0
     heroInstance: {fileID: 0}
   - heroName: HeroC
     heroPrefab: {fileID: 2668369813416765529, guid: cc3fb9902d147934aa2e373b875abba0, type: 3}
     lives: 3
     abilities:
     - Lightning
-    isDead: 0
     heroInstance: {fileID: 0}
   selectedHero:
     heroName: 
     heroPrefab: {fileID: 0}
     lives: 3
     abilities: []
-    isDead: 0
     heroInstance: {fileID: 0}
 --- !u!1 &724177627
 GameObject:
@@ -3381,7 +3377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 230}
+  m_AnchoredPosition: {x: -167, y: 230}
   m_SizeDelta: {x: 1000, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275062317
@@ -3404,7 +3400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name
+  m_text: Master's Legacy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f68dd1c0da15b3a48993cdab8ee2955e, type: 2}
   m_sharedMaterial: {fileID: -8012121946666490244, guid: f68dd1c0da15b3a48993cdab8ee2955e, type: 2}
@@ -3467,7 +3463,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -387.2168, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

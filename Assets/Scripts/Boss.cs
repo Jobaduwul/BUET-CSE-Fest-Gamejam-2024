@@ -8,7 +8,8 @@ public class Boss : MonoBehaviour
 {
     [SerializeField] private Transform player;
     public Animator animator;
-    
+    [SerializeField] private Animator playerAnimator;
+
     public Transform[] attackPoints;
     public float attackRange = 0.5f;
 
@@ -24,6 +25,11 @@ public class Boss : MonoBehaviour
     public float speed = 2.5f;
     public float pointDifference = 2.3f;
 
+    private int hitCounter = 0;
+
+    public GameObject levelManager;
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +38,7 @@ public class Boss : MonoBehaviour
         if (playerObject != null)
         {
             player = playerObject.transform;
+            playerAnimator = playerObject.GetComponent<Animator>();
         }
         else
         {
@@ -137,8 +144,35 @@ public class Boss : MonoBehaviour
             if (hero.CompareTag("MainHero") || hero.CompareTag("Player"))
             {
                 Debug.Log("Hit Hero: " + hero.name);
+                IncrementHitCounter();
             }
         }
+    }
+
+
+    private void IncrementHitCounter()
+    {
+        hitCounter++;
+
+        if (hitCounter >= 3)
+        {
+            TriggerDeath(); 
+        }
+    }
+
+    private void TriggerDeath()
+    {
+        Debug.Log("Hero defeated!");
+        playerAnimator.SetTrigger("Dead");
+
+        StartCoroutine(CompletePrologueAfterDelay(3f));
+    }
+
+    private IEnumerator CompletePrologueAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); 
+
+        levelManager.GetComponent<LevelSelectionController>().CompletePrologue();           // going to the next level
     }
 
     public void StopBossMovement()
