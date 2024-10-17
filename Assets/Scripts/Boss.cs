@@ -91,7 +91,7 @@ public class Boss : MonoBehaviour
         {
             if (hero.CompareTag("MainHero") || hero.CompareTag("Player"))
             {
-                Debug.Log("Hero nearby: " + hero.name);
+                // Debug.Log("Hero nearby: " + hero.name);
                 TriggerAttackAnimation();
             }
         }

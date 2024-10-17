@@ -793,7 +793,7 @@ MonoBehaviour:
   attackPoints:
   - {fileID: 1367551270}
   - {fileID: 501169665}
-  attackRange: 0.95
+  attackRange: 2
   proximityRange: {fileID: 606755296}
   damage: 40
   isFlipped: 0
@@ -1958,7 +1958,7 @@ Transform:
   m_GameObject: {fileID: 501169664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.702, y: -0.572, z: 0}
+  m_LocalPosition: {x: -0.117, y: -0.572, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2516,7 +2516,7 @@ GameObject:
   - component: {fileID: 733738959}
   m_Layer: 3
   m_Name: Fantasy Warrior
-  m_TagString: MainHero
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4087,7 +4087,7 @@ Transform:
   m_GameObject: {fileID: 1367551269}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91, y: -0.572, z: 0}
+  m_LocalPosition: {x: -0.786, y: -0.572, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
