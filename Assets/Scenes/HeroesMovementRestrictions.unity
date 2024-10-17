@@ -305,6 +305,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &85999542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85999543}
+  m_Layer: 0
+  m_Name: FootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &85999543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85999542}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.025, y: -0.27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 546093560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112158010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,6 +2208,7 @@ GameObject:
   - component: {fileID: 546093563}
   - component: {fileID: 546093565}
   - component: {fileID: 546093564}
+  - component: {fileID: 546093566}
   m_Layer: 0
   m_Name: Martial Hero 2
   m_TagString: Untagged
@@ -2280,6 +2312,7 @@ Transform:
   - {fileID: 303051705}
   - {fileID: 965667935}
   - {fileID: 1842705856}
+  - {fileID: 85999543}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &546093561
@@ -2401,6 +2434,20 @@ MonoBehaviour:
   attackRange: 0.2
   damage: 10
   animator: {fileID: 546093562}
+--- !u!114 &546093566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546093557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootPoint: {fileID: 85999543}
+  bossFootPoint: {fileID: 0}
 --- !u!1 &555397951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2439,6 +2486,37 @@ Transform:
   - {fileID: 356089233}
   - {fileID: 613458281}
   m_Father: {fileID: 1820584007}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &592154093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 592154094}
+  m_Layer: 0
+  m_Name: FootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &592154094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592154093}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.088, y: -0.41, z: 0}
+  m_LocalScale: {x: 1.7857144, y: 1.7857144, z: 1.7857144}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 834772342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &613458280
 GameObject:
@@ -2637,6 +2715,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2087396512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &683984957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 683984958}
+  m_Layer: 0
+  m_Name: FootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &683984958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683984957}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.006, y: -0.266, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1843679303}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763526897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,6 +2790,37 @@ Transform:
   m_Children:
   - {fileID: 1765431675}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &786187607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786187608}
+  m_Layer: 0
+  m_Name: FootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786187608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786187607}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.082, y: -0.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2087396512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &807368842
 GameObject:
@@ -2866,6 +3006,7 @@ GameObject:
   - component: {fileID: 834772344}
   - component: {fileID: 834772346}
   - component: {fileID: 834772345}
+  - component: {fileID: 834772347}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Untagged
@@ -2990,6 +3131,7 @@ Transform:
   - {fileID: 55253980}
   - {fileID: 1156114546}
   - {fileID: 1566647288}
+  - {fileID: 592154094}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &834772343
@@ -3090,6 +3232,20 @@ MonoBehaviour:
   attackRange: 0.18
   damage: 10
   animator: {fileID: 834772343}
+--- !u!114 &834772347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834772338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootPoint: {fileID: 592154094}
+  bossFootPoint: {fileID: 0}
 --- !u!1 &842729952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,6 +3843,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1077009058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077009059}
+  m_Layer: 0
+  m_Name: FootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1077009059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077009058}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04, y: -0.204, z: 0}
+  m_LocalScale: {x: 0.9803922, y: 0.9803922, z: 0.9803922}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2123918897}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1103545324
 GameObject:
   m_ObjectHideFlags: 0
@@ -5663,6 +5850,7 @@ GameObject:
   - component: {fileID: 1843679305}
   - component: {fileID: 1843679307}
   - component: {fileID: 1843679306}
+  - component: {fileID: 1843679308}
   m_Layer: 0
   m_Name: Evil Wizard
   m_TagString: Untagged
@@ -5785,6 +5973,7 @@ Transform:
   m_Children:
   - {fileID: 2086692279}
   - {fileID: 1851309499}
+  - {fileID: 683984958}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1843679304
@@ -5883,6 +6072,20 @@ MonoBehaviour:
   attackRange: 0.17
   damage: 10
   animator: {fileID: 1843679304}
+--- !u!114 &1843679308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843679298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootPoint: {fileID: 683984958}
+  bossFootPoint: {fileID: 0}
 --- !u!1 &1844830878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6496,6 +6699,7 @@ GameObject:
   - component: {fileID: 2087396514}
   - component: {fileID: 2087396516}
   - component: {fileID: 2087396515}
+  - component: {fileID: 2087396517}
   m_Layer: 0
   m_Name: Fantasy Warrior
   m_TagString: MainHero
@@ -6622,6 +6826,7 @@ Transform:
   - {fileID: 382612049}
   - {fileID: 675182525}
   - {fileID: 1170403696}
+  - {fileID: 786187608}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2087396513
@@ -6724,6 +6929,20 @@ MonoBehaviour:
   attackRange: 0.2
   damage: 10
   animator: {fileID: 2087396513}
+--- !u!114 &2087396517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087396507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootPoint: {fileID: 786187608}
+  bossFootPoint: {fileID: 0}
 --- !u!1 &2096814572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6824,6 +7043,7 @@ GameObject:
   - component: {fileID: 2123918899}
   - component: {fileID: 2123918901}
   - component: {fileID: 2123918900}
+  - component: {fileID: 2123918902}
   m_Layer: 0
   m_Name: Medieval Warrior 2
   m_TagString: Untagged
@@ -6948,6 +7168,7 @@ Transform:
   - {fileID: 893816915}
   - {fileID: 370317578}
   - {fileID: 1413630183}
+  - {fileID: 1077009059}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2123918898
@@ -7048,6 +7269,20 @@ MonoBehaviour:
   attackRange: 0.24
   damage: 10
   animator: {fileID: 2123918898}
+--- !u!114 &2123918902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123918893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5a143e752024d42b1a1a13c3e24d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootPoint: {fileID: 1077009059}
+  bossFootPoint: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

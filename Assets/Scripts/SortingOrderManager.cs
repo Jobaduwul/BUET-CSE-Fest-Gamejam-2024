@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class SortingOrderManager : MonoBehaviour
 {
-    public Transform playerFootPoint;
-    public Transform bossFootPoint;
+    [SerializeField] private Transform playerFootPoint;
+    [SerializeField] private Transform bossFootPoint;
 
     private SpriteRenderer playerRenderer;
 
@@ -19,13 +19,20 @@ public class SortingOrderManager : MonoBehaviour
 
     void UpdateSortingOrder()
     {
-        if (playerFootPoint.position.y > bossFootPoint.position.y)
+        if (playerFootPoint != null && bossFootPoint != null)
         {
-            playerRenderer.sortingOrder = -1; 
+            if (playerFootPoint.position.y > bossFootPoint.position.y)
+            {
+                playerRenderer.sortingOrder = 0;
+            }
+            else
+            {
+                playerRenderer.sortingOrder = 2;
+            }
         }
         else
         {
-            playerRenderer.sortingOrder = 1;  
+            Debug.LogWarning("PlayerFootPoint or BossFootPoint is not assigned!");
         }
     }
 }

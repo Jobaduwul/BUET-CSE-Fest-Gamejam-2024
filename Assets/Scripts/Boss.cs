@@ -5,7 +5,7 @@ using UnityEngine.Experimental.GlobalIllumination;
 
 public class Boss : MonoBehaviour
 {
-    public Transform player;
+    [SerializeField] private Transform player;
     public Animator animator;
     
     public Transform[] attackPoints;
@@ -30,9 +30,12 @@ public class Boss : MonoBehaviour
 
     private void Update()
     {
-        LookAtPlayer();
-        CheckPlayerProximity();
-        MoveTowardsPlayer();
+        if (player != null)
+        {
+            LookAtPlayer();
+            CheckPlayerProximity();
+            MoveTowardsPlayer();
+        }
     }
 
 
