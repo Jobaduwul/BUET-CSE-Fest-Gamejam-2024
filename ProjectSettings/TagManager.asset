@@ -7,14 +7,15 @@ TagManager:
   - Ground
   - Enemy
   - MainHero
+  - ProximityRange
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PlayerLayer
   - Water
   - UI
-  - 
+  - EnemyLayer
   - 
   - 
   - 
